@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular2 alert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./example.css"/>
+    <!-- IE required polyfills, in this exact order -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+    <script src="https://npmcdn.com/angular2@2.0.0-beta.9/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="https://code.angularjs.org/2.0.0-beta.17/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.17/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.17/angular2.js"></script>
+
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: {emitDecoratorMetadata: true},
+            packages: {
+                'app': {defaultExtension: 'ts'},
+                'angular2-alert': {defaultExtension: 'ts'}
+            },
+            map: {
+                'angular2-alert': 'module/angular2-alert'
+            }
+        });
+        System.import('app/main')
+                .then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<body>
+<my-alert>Loading...</my-alert>
+</body>
+
+</html>
