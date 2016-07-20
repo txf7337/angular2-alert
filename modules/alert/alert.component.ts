@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, DynamicComponentLoader, ChangeDetectorRef} from 'angular2/core';
+import {Component, OnInit, Input, DynamicComponentLoader, ChangeDetectorRef} from '@angular/core';
 import {AlertService} from "./alert.service.ts";
 
 @Component({

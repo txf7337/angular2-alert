@@ -1,5 +1,5 @@
-import {Component, OnInit, ElementRef} from 'angular2/core';
-import {AlertComponent, AlertService} from 'angular2-alert/angular2-alert';
+import {Component, OnInit, ElementRef} from '@angular/core';
+import {AlertComponent, AlertService} from '@angular/alert';
 @Component({
     selector: 'my-alert',
     template: `<alert></alert>
